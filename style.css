@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+}
+
+.box__green,
+.box__red,
+.box__yellow {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+}
+
+.box__green {
+    background-color: green;
+}
+
+.box__red {
+    background-color: red;
+}
+
+.box__yellow {
+    background-color: yellow;
+}
+
+@media (min-width: 800px) {
+
+    .box__green,
+    .box__red,
+    .box__yellow {
+        display: inline-block;
+    }
+}
+
+
+@media (orientation: landscape) {
+
+    .container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
